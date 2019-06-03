@@ -1,0 +1,18 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {	
+}
+
+a {
+}
+
+/**
+ * Makes center crop
+*/
+img.pic-thumb{
+	object-fit: cover; 	
+}

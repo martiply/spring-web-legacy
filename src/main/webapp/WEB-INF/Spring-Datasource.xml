@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://0.0.0.0/main?useUnicode=yes&amp;characterEncoding=UTF-8" />
+		<property name="username" value="root" />
+		<property name="password" value=""  />
+
+		<property name="poolPreparedStatements">
+			<value>true</value>
+		</property>
+
+		<property name="initialSize">
+			<value>2</value>
+		</property>
+
+		<property name="maxActive">
+			<value>15</value>
+		</property>
+
+		<property name="maxIdle">
+			<value>8</value>
+		</property>
+	</bean>
+
+</beans>

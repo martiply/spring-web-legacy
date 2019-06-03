@@ -1,0 +1,46 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="inventoryDAO" class="com.martiply.dao.InventoryDAO"
+		scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="pollDAO" class="com.martiply.dao.PollDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="standardDAO" class="com.martiply.dao.StandardDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+
+	<bean id="storeDAO" class="com.martiply.dao.StoreDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="couponDAO" class="com.martiply.dao.CouponDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="userDAO" class="com.martiply.dao.UserDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="ownerDAO" class="com.martiply.dao.OwnerDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="acraDAO" class="com.martiply.dao.AcraDAO" scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="defaultBidDAO" class="com.martiply.dao.DefaultBidDAO"
+		scope="prototype">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>
